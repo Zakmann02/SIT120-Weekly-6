@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+
+
+    <title>Handling User Inputs</title>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <p>Password</p>
+        <input v-model="password" input type="password" placeholder="Please enter password" />
+
+        <p>Password is: {{ password }}</p>
+
+        <p>Email</p>
+        <input v-model="email" input type="email" placeholder="Please enter email address" />
+
+        <p>Email is: {{ email }}</p>
+
+        <p>Checkbox</p>
+        <input type="checkbox" id="zac" value="Zac" v-model="checkedNames">
+        <label for="zac">Zac</label>
+        <input type="checkbox" id="bee" value="Bee" v-model="checkedNames">
+        <label for="bee">Bee</label>
+        <input type="checkbox" id="johnny" value="Johnny" v-model="checkedNames">
+        <label for="johnny">Johnny</label>
+        <br>
+        <span>Checked names: {{ checkedNames }}</span>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
